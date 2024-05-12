@@ -77,12 +77,8 @@ class ActiveAllExpensesItem extends StatelessWidget {
         vertical: 16,
       ),
       decoration: ShapeDecoration(
-        color: Colors.white,
+        color: Color(0xFF4DB7F2),
         shape: RoundedRectangleBorder(
-          side: BorderSide(
-            width: 1,
-            color: Color(0xFFF1F1F1),
-          ),
           borderRadius: BorderRadius.circular(12),
         ),
       ),
@@ -90,6 +86,8 @@ class ActiveAllExpensesItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
+            imageBackground: Colors.white.withOpacity(0.10000000149011612),
+            imageColor: Colors.white,
             image: itemModel.image,
           ),
           SizedBox(
@@ -97,21 +95,21 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleMeduim16,
+            style: AppStyles.styleMeduim16.copyWith(color: Colors.white),
           ),
           SizedBox(
             height: 8,
           ),
           Text(
             itemModel.date,
-            style: AppStyles.styleRegular14,
+            style: AppStyles.styleRegular14.copyWith(color: Color(0xFFFAFAFA)),
           ),
           SizedBox(
             height: 16,
           ),
           Text(
             itemModel.price,
-            style: AppStyles.styleSemiBold24,
+            style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),
           ),
         ],
       ),
