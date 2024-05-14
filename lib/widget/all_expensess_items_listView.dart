@@ -45,7 +45,7 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
                 updateIndex(index);
               },
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 4),
                 child: AllExpensesItem(
                     isSelcted: selectedIndex == index, itemModel: item),
               ),
