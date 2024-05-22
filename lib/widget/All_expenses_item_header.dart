@@ -21,15 +21,15 @@ class AllExpensesItemHeader extends StatelessWidget {
           child: SvgPicture.asset(
             image,
             colorFilter: ColorFilter.mode(
-                imageColor ?? Color(0xFF4EB7F2), BlendMode.srcIn),
+                imageColor ?? const Color(0xFF4EB7F2), BlendMode.srcIn),
           ),
         ),
-        Spacer(),
+        const Spacer(),
         Transform.rotate(
           angle: -1.57079633 * 2,
           child: Icon(
             Icons.arrow_back_ios_new_outlined,
-            color: imageColor == null ? Color(0xFF064061) : Colors.white,
+            color: imageColor == null ? const Color(0xFF064061) : Colors.white,
           ),
         ),
       ],

@@ -14,7 +14,7 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
           elevation: 0,
-          backgroundColor: backgroundColor ?? Color(0xFF4DB7F2),
+          backgroundColor: backgroundColor ?? const Color(0xFF4DB7F2),
         ),
         onPressed: () {},
         child: Text(

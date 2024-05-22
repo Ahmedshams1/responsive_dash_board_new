@@ -14,14 +14,14 @@ class InActiveAllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 20,
         vertical: 16,
       ),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
-          side: BorderSide(
+          side: const BorderSide(
             width: 1,
             color: Color(0xFFF1F1F1),
           ),
@@ -34,21 +34,21 @@ class InActiveAllExpensesItem extends StatelessWidget {
           AllExpensesItemHeader(
             image: itemModel.image,
           ),
-          SizedBox(
+          const SizedBox(
             height: 34,
           ),
           Text(
             itemModel.title,
             style: AppStyles.styleMeduim16,
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
             itemModel.date,
             style: AppStyles.styleRegular14,
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Text(
@@ -72,12 +72,12 @@ class ActiveAllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 20,
         vertical: 16,
       ),
       decoration: ShapeDecoration(
-        color: Color(0xFF4DB7F2),
+        color: const Color(0xFF4DB7F2),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -90,21 +90,22 @@ class ActiveAllExpensesItem extends StatelessWidget {
             imageColor: Colors.white,
             image: itemModel.image,
           ),
-          SizedBox(
+          const SizedBox(
             height: 34,
           ),
           Text(
             itemModel.title,
             style: AppStyles.styleMeduim16.copyWith(color: Colors.white),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
             itemModel.date,
-            style: AppStyles.styleRegular14.copyWith(color: Color(0xFFFAFAFA)),
+            style: AppStyles.styleRegular14
+                .copyWith(color: const Color(0xFFFAFAFA)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Text(
