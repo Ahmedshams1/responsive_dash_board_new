@@ -19,7 +19,10 @@ class TransectionHistory extends StatelessWidget {
           style:
               AppStyles.styleRegular16.copyWith(color: const Color(0xFFAAAAAA)),
         ),
-        TransectionHistoryListView(),
+        const SizedBox(
+          height: 16,
+        ),
+        const TransectionHistoryListView(),
       ],
     );
   }

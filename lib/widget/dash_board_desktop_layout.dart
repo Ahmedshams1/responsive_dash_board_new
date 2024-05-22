@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/widget/allexpenses_and_quick_invoice.dart';
 import 'package:responsive_dash_board/widget/custom_drawer.dart';
+import 'package:responsive_dash_board/widget/myCard_and_transection_section.dart';
 import 'package:responsive_dash_board/widget/my_card_section.dart';
 import 'package:responsive_dash_board/widget/transection_hestory.dart';
 
@@ -26,7 +27,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
           width: 24,
         ),
         Expanded(
-          child: TransectionHistory(),
+          child: MyCardAndTransectionHistorySection(),
         ),
       ],
     );
